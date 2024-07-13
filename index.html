@@ -37,34 +37,8 @@
             <label for="search-box" class="fas fa-search"></label>
         </div>
 
+        
         <div class="cart-items-container">
-            <div class="cart-item">
-                <span class="fas fa-times"></span>
-                <img src="/movie_img/nuocmat.jpg" alt="">
-                <div class="content">
-                    <h3>cart item 01</h3>
-                    <div class="price">$15.99/-</div>
-                </div>
-            </div>
-
-            <div class="cart-item">
-                <span class="fas fa-times"></span>
-                <img src="/movie_img/nuocmat.jpg" alt="">
-                <div class="content">
-                    <h3>cart item 01</h3>
-                    <div class="price">$15.99/-</div>
-                </div>
-            </div>
-
-            <div class="cart-item">
-                <span class="fas fa-times"></span>
-                <img src="/movie_img/nuocmat.jpg" alt="">
-                <div class="content">
-                    <h3>cart item 01</h3>
-                    <div class="price">$15.99/-</div>
-                </div>
-            </div>
-
             <a href="" class="btn">checkout now</a>
         </div>
     </header>
@@ -97,35 +71,29 @@
         
     </section>
 
+
     <section class="menu" id="menu">
-
         <h1 class="heading">Hot <span>Movies</span></h1>
-
         <div class="box-container">
-
             <div class="box">
                 <img src="/movie_img/mai.jpg" alt="">
                 <h3>Mai</h3>
-                <div class="price">$15.99$ <span>20.99</span></div>
-                <a href="#" class="btn"> add to cart</a>
+                <div class="price">$15.99 <span>$20.99</span></div>
+                <a href="#" class="btn add-to-cart" data-name="Mai" data-price="15.99" data-image="/movie_img/mai.jpg"> add to cart</a>
             </div>
-
             <div class="box">
                 <img src="/movie_img/nhabanu.jpg" alt="">
                 <h3>Nhà bà nữ</h3>
-                <div class="price">$15.99$ <span>20.99</span></div>
-                <a href="#" class="btn"> add to cart</a>
+                <div class="price">$15.99 <span>$20.99</span></div>
+                <a href="#" class="btn add-to-cart" data-name="Nhà bà nữ" data-price="15.99" data-image="/movie_img/nhabanu.jpg"> add to cart</a>
             </div>
-
             <div class="box">
                 <img src="/movie_img/datrungphuongnam.jpg" alt="">
                 <h3>Đất rừng phương Nam</h3>
-                <div class="price">$15.99$ <span>20.99</span></div>
-                <a href="#" class="btn"> add to cart</a>
+                <div class="price">$15.99 <span>$20.99</span></div>
+                <a href="#" class="btn add-to-cart" data-name="Đất rừng phương Nam" data-price="15.99" data-image="/movie_img/datrungphuongnam.jpg"> add to cart</a>
             </div>
         </div>
-
-
     </section>
 
     <section class="rented" id="rented">
@@ -134,7 +102,7 @@
         <div class="box-container">
             <div class="box">
                 <div class="icons">
-                    <a href="#" class="fas fa-shopping-cart"></a>
+                    <a href="#" class="fas fa-shopping-cart" data-name="Kẻ ăn hồn" data-image="/movie_img/keanhon.jpg" data-price="15.99"></a>
                     <a href="#" class="fas fa-heart"></a>
                     <a href="#" class="fas fa-eye"></a>
                 </div>
@@ -151,13 +119,12 @@
                         <i class="fas fa-star-half-alt"></i>
                     </div>
                     <a href="#" class="btn">Watch now</a>
-                    <!-- <div class="price">$15.99 <span>$20.99</span></div> -->
                 </div>
             </div>
-
+    
             <div class="box">
                 <div class="icons">
-                    <a href="#" class="fas fa-shopping-cart"></a>
+                    <a href="#" class="fas fa-shopping-cart" data-name="Chìa khóa trăm tỷ" data-image="/movie_img/chiakhoa.jpg" data-price="15.99"></a>
                     <a href="#" class="fas fa-heart"></a>
                     <a href="#" class="fas fa-eye"></a>
                 </div>
@@ -174,13 +141,12 @@
                         <i class="fas fa-star-half-alt"></i>
                     </div>
                     <a href="#" class="btn">Watch now</a>
-                    <!-- <div class="price">$15.99 <span>$20.99</span></div> -->
                 </div>
             </div>
-
+    
             <div class="box">
                 <div class="icons">
-                    <a href="#" class="fas fa-shopping-cart"></a>
+                    <a href="#" class="fas fa-shopping-cart" data-name="Qua bển làm chi" data-image="/movie_img/quaben.jpg" data-price="15.99"></a>
                     <a href="#" class="fas fa-heart"></a>
                     <a href="#" class="fas fa-eye"></a>
                 </div>
@@ -197,14 +163,11 @@
                         <i class="fas fa-star-half-alt"></i>
                     </div>
                     <a href="#" class="btn">Watch now</a>
-                    <!-- <div class="price">$15.99 <span>$20.99</span></div> -->
-                    
                 </div>
             </div>
         </div>
-
-
     </section>
+    
 
     <section class="account" id="account">
         <h1 class="heading">Your <span>Account</span></h1>
@@ -235,11 +198,11 @@
 
     </section>
 
+
     <section class="message" id="message">
         <h1 class="heading">Mes<span>sage</span></h1>
         <main class="table" id="customers_table">
             <section class="table__body">
-                
                 <table>
                     <thead>
                         <tr>
@@ -248,6 +211,7 @@
                             <th> Date <span class="icon-arrow">&UpArrow;</span></th>
                             <th> Status <span class="icon-arrow">&UpArrow;</span></th>
                             <th> Amount <span class="icon-arrow">&UpArrow;</span></th>
+                            <th> Action </th>
                         </tr>
                     </thead>
                     <tbody>
@@ -255,62 +219,58 @@
                             <td> 1 </td>
                             <td> <img src="/movie_img/logo.jpg" alt="">Zinzu Chan Lee</td>
                             <td> 17 Dec, 2022 </td>
-                            <td>
-                                <p class="status delivered">Watched</p>
-                            </td>
-                            <td> <strong> $128.90 </strong></td>
+                            <td><p class="status delivered">Watched</p></td>
+                            <td><strong>$128.90</strong></td>
+                            <td><span class="fas fa-times"></span></td>
                         </tr>
                         <tr>
                             <td> 2 </td>
                             <td><img src="/movie_img/logo.jpg" alt=""> Jeet Saru </td>
                             <td> 27 Aug, 2023 </td>
-                            <td>
-                                <p class="status cancelled">Cancelled</p>
-                            </td>
-                            <td> <strong>$5350.50</strong> </td>
+                            <td><p class="status cancelled">Cancelled</p></td>
+                            <td><strong>$5350.50</strong></td>
+                            <td><span class="fas fa-times"></span></td>
                         </tr>
                         <tr>
                             <td> 3</td>
                             <td><img src="/movie_img/netflix.png" alt=""> Sonal Gharti </td>
                             <td> 14 Mar, 2023 </td>
-                            <td>
-                                <p class="status shipped">Watching</p>
-                            </td>
-                            <td> <strong>$210.40</strong> </td>
+                            <td><p class="status shipped">Watching</p></td>
+                            <td><strong>$210.40</strong></td>
+                            <td><span class="fas fa-times"></span></td>
                         </tr>
                         <tr>
                             <td> 4</td>
                             <td><img src="/movie_img/netflix.png" alt=""> Alson GC </td>
                             <td> 25 May, 2023 </td>
-                            <td>
-                                <p class="status delivered">Watched</p>
-                            </td>
-                            <td> <strong>$149.70</strong> </td>
+                            <td><p class="status delivered">Watched</p></td>
+                            <td><strong>$149.70</strong></td>
+                            <td><span class="fas fa-times"></span></td>
                         </tr>
                         <tr>
                             <td> 5</td>
                             <td><img src="/movie_img/galaxy.png" alt=""> Sarita Limbu </td>
                             <td> 23 Apr, 2023 </td>
-                            <td>
-                                <p class="status pending">Waited</p>
-                            </td>
-                            <td> <strong>$399.99</strong> </td>
+                            <td><p class="status pending">Waited</p></td>
+                            <td><strong>$399.99</strong></td>
+                            <td><span class="fas fa-times"></span></td>
                         </tr>
                         <tr>
                             <td> 6</td>
                             <td><img src="/movie_img/galaxy.png" alt=""> Alex Gonley </td>
                             <td> 23 Apr, 2023 </td>
-                            <td>
-                                <p class="status cancelled">Cancelled</p>
-                            </td>
-                            <td> <strong>$399.99</strong> </td>
+                            <td><p class="status cancelled">Cancelled</p></td>
+                            <td><strong>$399.99</strong></td>
+                            <td><span class="fas fa-times"></span></td>
                         </tr>
-                        
                     </tbody>
                 </table>
             </section>
         </main>
     </section>
+    
+
+    
 
     <section class="device" id="device">
         <h1 class="heading">De<span>vices</span></h1>
@@ -322,7 +282,7 @@
                             <th> Id <span class="icon-arrow">&UpArrow;</span></th>
                             <th> Devices <span class="icon-arrow">&UpArrow;</span></th>
                             <th> Login Date <span class="icon-arrow">&UpArrow;</span></th>
-                    
+                            <th> Action </th>
                         </tr>
                     </thead>
                     <tbody>
@@ -330,24 +290,27 @@
                             <td> 1 </td>
                             <td> <img src="/movie_img/iphone15.jpg" alt="">Zinzu Chan Lee</td>
                             <td> 17 Dec, 2022 </td>
-                            
+                            <td><span class="fas fa-times"></span></td>
                         </tr>
                         <tr>
                             <td> 2 </td>
                             <td><img src="/movie_img/xiaomi14.jpg" alt=""> Jeet Saru </td>
                             <td> 27 Aug, 2023 </td>
+                            <td><span class="fas fa-times"></span></td>
                             
                         </tr>
                         <tr>
                             <td> 3</td>
                             <td><img src="/movie_img/samsung.jpg" alt=""> Sonal Gharti </td>
                             <td> 14 Mar, 2023 </td>
-                           
-                    
-                        
+                            <td><span class="fas fa-times"></span></td>
+
+                        </tr>
+                        <!-- Add more rows as needed -->
                     </tbody>
                 </table>
-        
+            </section>
+        </main>
     </section>
 
 
