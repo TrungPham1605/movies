@@ -64,6 +64,9 @@ document.addEventListener('DOMContentLoaded', function() {
         // Add event listener for remove icon
         cartItem.querySelector('.fas').addEventListener('click', function() {
             cartItem.remove();
+            if (cartContainer.querySelectorAll('.cart-item').length === 0) {
+                cartContainer.classList.remove('active');
+            }
         });
     }
 
@@ -96,6 +99,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if (searchForm) searchForm.classList.remove('active');
     });
 });
+
 
 
 // Remove message
